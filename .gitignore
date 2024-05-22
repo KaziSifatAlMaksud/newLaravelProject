@@ -1,0 +1,50 @@
+# Laravel specific
+/vendor/
+/node_modules/
+/public/hot
+/public/storage
+/storage/*.key
+.phpunit.result.cache
+/.phpunit.cache
+.env
+.env.backup
+.env.production
+Homestead.json
+Homestead.yaml
+/public/build
+
+# IDE specific
+/.idea/
+/.vscode/
+/.fleet
+
+# OS or Editor specific
+.DS_Store
+Thumbs.db
+
+# Laravel generated files
+bootstrap/compiled.php
+app/storage/
+
+# Logs and debug files
+npm-debug.log*
+yarn-error.log*
+
+# Ignore public uploads
+public/uploads
+public_html/storage
+public_html/hot
+public/gallery_images
+
+# Custom extensions
+*.png
+*.json
+*.pdf
+*.webp
+*.mp4
+
+# Docker specific
+docker-compose.override.yml
+
+# Vagrant specific
+/.vagrant

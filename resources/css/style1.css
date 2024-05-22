@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(185, 185, 185, 0.598);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #898888;
+}
+
+body {
+  background-color: #f0f1f7;
+  color: "#333335";
+  font-family: "Inter", sans-serif;
+}
+
+.btn-primary {
+  @apply py-3 px-4 inline-flex items-center justify-center gap-x-2 text-sm font-semibold rounded-lg bg-primary text-white hover:bg-blue-800 disabled:opacity-50 disabled:pointer-events-none;
+}
+
+.btn-secondary {
+  @apply py-3 px-4 inline-flex items-center justify-center gap-x-2 text-sm font-semibold rounded-lg bg-primary-20 text-primary hover:bg-primary-20 disabled:opacity-50 disabled:pointer-events-none;
+}
+
+.input_custom {
+  @apply py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-primary-20 focus:ring-primary-20 disabled:opacity-50 disabled:pointer-events-none;
+}

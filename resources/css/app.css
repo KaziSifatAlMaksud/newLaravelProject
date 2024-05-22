@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(185, 185, 185, 0.598);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #898888;
+}
+
+body {
+    background-color: #f0f1f7;
+    color: "#333335";
+    font-family: "Inter", sans-serif;
+}
+
+
+
+.btn-secondary {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    /* This is for text-sm */
+    font-weight: 600;
+    /* This is for font-semibold */
+    border-radius: 0.5rem;
+    background-color: #d4dcfd;
+    color: #002fd1;
+}
+
+.btn-secondary:hover {
+    background-color: #d4dcfd;
+
+}
+
+.btn-secondary:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.btn-primary {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    /* This is for text-sm */
+    font-weight: 600;
+    /* This is for font-semibold */
+    border-radius: 0.5rem;
+    /* This is for rounded-lg */
+    background-color: #1e40af;
+    /* This is a placeholder for bg-primary, replace with actual color */
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #2b6cb0;
+    /* This is a placeholder for hover:bg-blue-800, replace with actual color */
+}
+
+.btn-primary:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+.input_custom {
+    padding-top: 0.75rem;
+    /* py-3 */
+    padding-bottom: 0.75rem;
+    /* py-3 */
+    padding-left: 1rem;
+    /* px-4 */
+    padding-right: 1rem;
+    /* px-4 */
+    display: block;
+    width: 100%;
+    /* w-full */
+    border: 1px solid #e2e8f0;
+    /* border-gray-200, adjust the color based on your theme */
+    border-radius: 0.5rem;
+    /* rounded-lg */
+    font-size: 0.875rem;
+    /* text-sm */
+}
+
+.input_custom:focus {
+    border-color: #bbb;
+    /* Replace with the actual color for border-primary-20 */
+    --tw-ring-inset: var(--tw-empty,
+            /*!*/
+            /*!*/
+        );
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #yourColorForPrimary20;
+    /* Replace with the actual color for ring-primary-20 */
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000, 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    border-width: 1px;
+}
+
+.input_custom:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
